@@ -8,7 +8,7 @@ Este projeto realiza uma análise exploratória de dados (EDA) em um conjunto de
 - Qual é o perfil do cliente que mais compra (idade, gênero e localização)?
 - Descontos aumentam ou reduzem o ticket médio?
 
-O conjunto de dados utilizado foi obtido no site <a href="https://www.kaggle.com/datasets/ranaghulamnabi/shopping-behavior-and-preferences-study" target="_blank"><b>Kaggle</b></a>, em formato CSV.
+O conjunto de dados utilizado foi obtido no site [**Kaggle**](https://www.kaggle.com/datasets/ranaghulamnabi/shopping-behavior-and-preferences-study), em formato CSV.
 
 O trabalho foi desenvolvido simulando o fluxo real de um analista de dados, passando pelas etapas de limpeza, exploração e geração de insights aplicáveis ao negócio.
 
