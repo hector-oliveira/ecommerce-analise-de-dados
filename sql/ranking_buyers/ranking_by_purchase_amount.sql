@@ -1,5 +1,5 @@
 -------------------------------------------------------------
--- 8) Ranking dos maiores compradores
+-- Ranking dos maiores compradores
 -- Objetivo: Listar os clientes que mais gastam, em ordem decrescente.
 -------------------------------------------------------------
 SELECT

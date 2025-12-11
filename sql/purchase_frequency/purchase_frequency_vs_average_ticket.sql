@@ -1,5 +1,5 @@
 -------------------------------------------------------------
--- 7) Frequência de compras e ticket médio
+-- Frequência de compras e ticket médio
 -- Objetivo: Analisar se clientes que compram mais também gastam mais.
 -------------------------------------------------------------
 SELECT
