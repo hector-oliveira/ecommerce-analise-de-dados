@@ -57,7 +57,7 @@ O pipeline de preparação realiza:
 ### 3.3 Perfil de Quem Mais Compra  
 
 | Aspecto | Conclusão |
-|--------|-----------|
+|---------|-----------|
 | Faixa etária | Maior volume entre **36–65 anos** |
 | Gênero | Homens compram **mais que o dobro** das mulheres |
 | Localização | Compras distribuídas entre vários estados |
@@ -113,7 +113,7 @@ O pipeline de preparação realiza:
 ## 5. Possíveis Extensões Futuras
 
 - Dashboard interativo (Power BI, Looker Studio ou Streamlit)  
-- Análise de LTV, churn e cohort  
+- Análise de LTV e churn  
 - Modelos de previsão de demanda  
 - Segmentação de clientes via clusterização  
 - Inclusão de dados de margem e lucratividade  
