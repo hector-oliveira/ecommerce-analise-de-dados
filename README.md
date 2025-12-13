@@ -142,6 +142,43 @@ O objetivo desta página é fornecer uma **visão rápida, clara e estratégica*
 
 ---
 
+### 🏷️ Descontos & Estratégia Comercial
+
+Esta página analisa o **impacto da aplicação de descontos na performance de vendas**, permitindo avaliar se a estratégia de descontos contribui para aumento de receita, volume de pedidos ou ticket médio.
+
+O dashboard foi desenvolvido para apoiar decisões relacionadas a precificação e estratégias promocionais.
+
+#### 🔢 Principais métricas exibidas
+- Receita total
+- Receita com desconto
+- Receita sem desconto
+- Percentual de vendas com desconto
+
+#### 📊 Análises disponíveis
+- Comparação de receita entre vendas com e sem desconto
+- Avaliação do ticket médio por aplicação de desconto
+- Volume de pedidos com e sem desconto
+
+#### 🎛️ Filtros interativos
+- Gênero do cliente
+- Cliente é assinante
+- Categoria de produto
+
+Esses filtros permitem segmentar a análise e compreender o impacto dos descontos em diferentes perfis de clientes e categorias.
+
+#### 🎯 Objetivo da Análise de Descontos
+O objetivo desta página é identificar se os descontos:
+- Aumentam o volume de pedidos
+- Impactam o ticket médio
+- Contribuem de forma relevante para a receita total
+
+Os resultados indicam que, embora os descontos representem uma parcela relevante das vendas, eles **não aumentam o ticket médio**, sugerindo que devem ser utilizados de forma estratégica, com foco em volume e não em valor.
+
+#### 🖼️ Visualização do Dashboard – Descontos & Estratégia Comercial
+![Dashboard – Descontos & Estratégia Comercial](powerbi/screenshots/discounts_strategy.png)
+
+---
+
 ## ✅ Conclusão
 Este projeto demonstra a capacidade de **analisar dados, gerar insights relevantes e traduzi-los em impacto real para o negócio**, simulando atividades do dia a dia de um Analista de Dados em um ambiente de e-commerce.
 
