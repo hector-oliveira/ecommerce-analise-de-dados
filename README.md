@@ -109,5 +109,5 @@ Este projeto demonstra a capacidade de **analisar dados, gerar insights relevant
 
 ## 7. Autor
 
-[**Hector Oliveira**](www.linkedin.com/in/hectoroliveira-tech)    
+[**Hector Oliveira**](https://www.linkedin.com/in/hectoroliveira-tech/)  
 Analista de Dados Júnior  
