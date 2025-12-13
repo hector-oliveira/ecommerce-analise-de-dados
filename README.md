@@ -1,99 +1,84 @@
-#  E-commerce Customer Analytics  
-Análise exploratória de vendas, perfil de clientes e impacto de descontos
+# Análise de Dados de E-commerce
 
-## 1. Visão Geral do Projeto
-Este projeto realiza uma análise exploratória (EDA) sobre dados de e-commerce, com o objetivo de entender o comportamento dos clientes e identificar padrões que possam direcionar decisões estratégicas do negócio.
+## Visão Geral do Projeto
+Este projeto tem como objetivo realizar uma **análise exploratória de dados (EDA)** em um conjunto de dados de e-commerce, com foco em **entender o comportamento de compra dos clientes**, identificar padrões de vendas e gerar **insights acionáveis para o negócio**.
 
-As perguntas norteadoras incluem:
-
-- Quais categorias têm maior volume de vendas?
-- Quem compra mais? (perfil demográfico)
-- Descontos aumentam ou reduzem o ticket médio?
-- Assinantes compram mais que não-assinantes?
-- Quem são os clientes mais valiosos?
+O projeto simula um cenário real de atuação de um **Analista de Dados**, passando por limpeza de dados, análise em Python, consultas SQL e interpretação dos resultados sob a ótica de negócio.
 
 O dataset original está disponível no **Kaggle**:  
 [*Shopping Behavior and Preferences Study*](https://www.kaggle.com/datasets/ranaghulamnabi/shopping-behavior-and-preferences-study)
 
-A análise simula o fluxo real de um analista de dados, passando por limpeza, exploração e geração de insights estratégicos.
+---
+
+## Problema de Negócio
+Empresas de e-commerce precisam responder perguntas estratégicas como:
+
+- Quais categorias e produtos geram mais vendas e receita?
+- Quem são os clientes que mais compram?
+- Descontos realmente aumentam o ticket médio?
+- Onde estão concentrados os principais consumidores?
+
+O desafio deste projeto é **transformar dados brutos de clientes e compras em informações úteis para tomada de decisão** nas áreas de marketing, vendas e estoque.
 
 ---
 
-## 2. Pipeline de Limpeza (`src/clear.py`)
+## 1. O que foi feito
 
-O pipeline de preparação realiza:
+### 01. Limpeza e Preparação dos Dados
+- Padronização de nomes de colunas
+- Normalização de variáveis categóricas (gênero, categoria, localização, etc.)
+- Remoção de duplicados
+- Renomeação de colunas para melhor legibilidade
+- Geração de um dataset limpo (`customer_clear.csv`)
 
-- Padronização e renomeação de colunas  
-- Normalização de textos (gênero, categorias, estados, etc.)  
-- Remoção de duplicidades  
-- Correção de valores inconsistentes  
-- Exportação de um CSV limpo para análise  
+### 02. Análise Exploratória em Python
+Utilizando **Pandas** e **Matplotlib**, foram realizadas análises como:
+- Categorias e itens mais vendidos
+- Distribuição de compras por faixa etária
+- Comparação de compras por gênero
+- Localizações com maior volume de compras
+- Visualizações para facilitar interpretação dos dados
 
-**Objetivo:** garantir qualidade, consistência e confiabilidade dos dados.
-
----
-
-## 3. Principais Insights da Análise
-
-### 3.1 Categorias Mais Vendidas  
-- **Roupas (*Clothing*)** lideram em volume de vendas.  
-- **Acessórios (*Accessories*)** vêm em seguida.  
-- **Calçados (*Footwear*)** e **Roupas Externas (*Outerwear*)** possuem menor frequência.
-
-*Insight:* categorias com maior demanda devem ser priorizadas em estratégias de marketing e abastecimento.
-
----
-
-### 3.2 Ticket Médio por Categoria  
-- **Calçados (*Footwear*)** possuem o maior ticket médio.  
-- **Agasalho (*Outerwear*)** apresenta o menor ticket médio.
-
-*Insight:* 
-- Calçados sugere um público premium.
-- Agasalho pode precisar de ajuste de preço ou reposicionamento.
+### 03. Análise com SQL
+Foram criadas consultas SQL para responder perguntas de negócio, incluindo:
+- Ticket médio por categoria
+- Volume de vendas por categoria
+- Avaliação média dos clientes por categoria
+- Impacto de descontos no ticket médio
+- Frequência de compras versus valor médio gasto
+- Identificação de clientes com maior histórico de compras
 
 ---
 
-### 3.3 Perfil de Quem Mais Compra  
+## 2. Principais Descobertas
 
-| Aspecto | Conclusão |
-|---------|-----------|
-| Faixa etária | Maior volume entre **36–65 anos** |
-| Gênero | Homens compram **mais que o dobro** das mulheres |
-| Localização | Compras distribuídas entre vários estados |
+### Perfil do Cliente
+- A maior concentração de compras está entre clientes de **36 a 65 anos**, com pico entre **51 e 65 anos**.
+- O público masculino representa **mais que o dobro** do volume de compras em relação ao feminino.
 
-*Insight:* campanhas devem priorizar público maduro, com foco em qualidade, praticidade e confiança.
+### Produtos e Categorias
+- **Clothing** lidera em volume de vendas.
+- **Footwear** apresenta o maior **ticket médio**.
+- Produtos mais vendidos são fortes candidatos a estratégias de **cross-sell** e kits promocionais.
 
----
+### Descontos e Ticket Médio
+- Compras **sem desconto** possuem ticket médio levemente maior do que compras com desconto.
+- Descontos não aumentam o valor médio da compra, mas podem ser usados para aumento de volume.
 
-### 3.4 Ticket Médio: Com vs. Sem Desconto  
-- Compras **sem desconto** têm ticket médio **maior** do que compras **com desconto**.
-
-*Insight:* utilizar descontos apenas de maneira estratégica, evitando queda no faturamento.
-
----
-
-### 3.5 Assinantes vs. Não-Assinantes  
-- Assinantes representam **27%** da base.  
-- O ticket médio é praticamente igual ao dos não-assinantes.
-
-*Insight:* a assinatura não agrega valor ao ticket.
+### Localização
+- As vendas estão distribuídas entre diversos estados, com leve liderança de algumas regiões.
+- Não há forte dependência de uma única localização, reduzindo risco regional.
 
 ---
 
-### 3.6 Ranking dos Maiores Compradores  
-- Os maiores gastadores alcançam **$100** por compra.  
-- Perfil predominante: homens entre 20 e 50 anos.
+## 3. Impacto no Negócio
+Com base nos insights obtidos, este projeto permite apoiar decisões como:
 
-*Insight:* potencial para campanhas exclusivas e produtos premium.
-
----
-
-### 3.7 Clientes com Maior Histórico de Compras  
-- Clientes com até **50 compras anteriores**.  
-- Concentração maior entre 30–60 anos.
-
-*Insight:* foco ideal para programas de fidelidade.
+- **Marketing direcionado** ao público masculino entre 36 e 65 anos, destacando qualidade e custo-benefício.
+- **Uso estratégico de descontos**, focando em volume de vendas e não em aumento de ticket médio.
+- **Gestão de estoque**, priorizando categorias de alto volume e alto valor.
+- **Campanhas regionais**, otimizando investimentos em estados com maior retorno.
+- **Precificação inteligente**, explorando maior margem em produtos com alta demanda.
 
 ---
 
@@ -113,14 +98,16 @@ O pipeline de preparação realiza:
 ## 5. Possíveis Extensões Futuras
 
 - Dashboard interativo (Power BI, Looker Studio ou Streamlit)  
-- Análise de LTV e churn  
-- Modelos de previsão de demanda  
-- Segmentação de clientes via clusterização  
-- Inclusão de dados de margem e lucratividade  
+- Análise de métricas avançadas como LTV e churn
+- Modelos de previsão de vendas
+- Deploy da aplicação 
 
 ---
 
-## 6. Autor
+## 6. Conclusão
+Este projeto demonstra a capacidade de **analisar dados, gerar insights relevantes e traduzi-los em impacto real para o negócio**, simulando atividades do dia a dia de um Analista de Dados em um ambiente de e-commerce
 
-**Hector Oliveira**  
+## 7. Autor
+
+[**Hector Oliveira**](www.linkedin.com/in/hectoroliveira-tech)    
 Analista de Dados Júnior  
