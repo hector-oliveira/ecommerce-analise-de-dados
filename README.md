@@ -6,17 +6,17 @@ Este projeto tem como objetivo realizar uma **análise exploratória de dados (E
 O projeto simula um cenário real de atuação de um **Analista de Dados**, passando por limpeza de dados, análise em Python, consultas SQL e interpretação dos resultados sob a ótica de negócio.
 
 O dataset original está disponível no **Kaggle**:  
-[*Shopping Behavior and Preferences Study*](https://www.kaggle.com/datasets/ranaghulamnabi/shopping-behavior-and-preferences-study) 📂
+[*Shopping Behavior and Preferences Study*](https://www.kaggle.com/datasets/ranaghulamnabi/shopping-behavior-and-preferences-study)
 
 ---
 
 ## 🎯 Problema de Negócio
 Empresas de e-commerce precisam responder perguntas estratégicas como:
 
-- Quais categorias e produtos geram mais vendas e receita? 💰
-- Quem são os clientes que mais compram? 👥
-- Descontos realmente aumentam o ticket médio? 🏷️
-- Onde estão concentrados os principais consumidores? 📍
+- Quais categorias e produtos geram mais vendas e receita?
+- Quem são os clientes que mais compram?
+- Descontos realmente aumentam o ticket médio?
+- Onde estão concentrados os principais consumidores?
 
 O desafio deste projeto é **transformar dados brutos de clientes e compras em informações úteis para tomada de decisão** nas áreas de marketing, vendas e estoque.
 
@@ -29,21 +29,21 @@ O desafio deste projeto é **transformar dados brutos de clientes e compras em i
 - Normalização de variáveis categóricas (gênero, categoria, localização, etc.)
 - Remoção de duplicados
 - Renomeação de colunas para melhor legibilidade
-- Geração de um dataset limpo (`customer_clear.csv`) 🧹
+- Geração de um dataset limpo (`customer_clear.csv`)
 
 ### 🔎 Análise Exploratória em Python
 Utilizando **Pandas** e **Matplotlib**, foram realizadas análises como:
-- Categorias e itens mais vendidos 📦
-- Distribuição de compras por faixa etária 👤
-- Comparação de compras por gênero ⚖️
-- Localizações com maior volume de compras 🌎
-- Visualizações para facilitar interpretação dos dados 📈
+- Categorias e itens mais vendidos
+- Distribuição de compras por faixa etária
+- Comparação de compras por gênero
+- Localizações com maior volume de compras
+- Visualizações para facilitar interpretação dos dados
 
 ### 💾 Análise com SQL
 Foram criadas consultas SQL para responder perguntas de negócio, incluindo:
 - Ticket médio por categoria
 - Volume de vendas por categoria
-- Avaliação média dos clientes por categoria ⭐
+- Avaliação média dos clientes por categoria
 - Impacto de descontos no ticket médio
 - Frequência de compras versus valor médio gasto
 - Identificação de clientes com maior histórico de compras
