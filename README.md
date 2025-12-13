@@ -109,7 +109,7 @@ Com base nos insights obtidos, este projeto permite apoiar decisões como:
 
 Esta página apresenta uma **visão executiva da performance do e-commerce**, com foco em indicadores estratégicos de vendas e distribuição geográfica, desenvolvida no **Power BI**.
 
-O dashboard foi construído para simular um cenário real de tomada de decisão, permitindo que gestores analisem rapidamente o desempenho do negócio e identifiquem oportunidades de otimização.
+O dashboard foi construído para simular um cenário real de tomada de decisão, permitindo que gestores analisem rapidamente o desempenho geral do negócio.
 
 #### 🔢 Principais métricas exibidas
 - Receita total
@@ -126,27 +126,28 @@ O dashboard foi construído para simular um cenário real de tomada de decisão,
 - Aplicação de desconto
 - Status de assinatura
 
-Esses filtros permitem análises dinâmicas, possibilitando comparar comportamentos de compra e avaliar o impacto de estratégias comerciais sobre o desempenho do negócio.
+#### 🧠 Principais insights
+- A categoria **Clothing** concentra o maior volume de receita, indicando ser o principal motor de vendas.
+- A receita está distribuída entre diversos estados, reduzindo a dependência de uma única região.
+- O ticket médio permanece estável entre diferentes segmentos, sugerindo consistência no padrão de consumo.
 
-#### 🗺️ Objetivo da Visão Executiva
-O objetivo desta página é fornecer uma **visão rápida, clara e estratégica**, apoiando decisões relacionadas a:
+#### 🎯 Objetivo da Visão Executiva
+Fornecer uma **visão rápida, clara e estratégica** do negócio, apoiando decisões relacionadas a:
 - Prioridade de categorias
-- Estratégias de desconto
-- Perfil dos clientes
-- Distribuição regional das vendas
+- Alocação de investimentos
+- Análise regional de vendas
+- Monitoramento de KPIs principais
 
-> 💼 O dashboard foi desenvolvido com foco em clareza visual, usabilidade e alinhamento com métricas de negócio.
-
-#### 🖼️ Visualização do Dashboard - Visão Executiva
+#### 🖼️ Visualização do Dashboard – Visão Executiva
 ![Dashboard – Visão Executiva](powerbi/screenshots/executive_vision.png)
 
 ---
 
 ### 🏷️ Descontos & Estratégia Comercial
 
-Esta página analisa o **impacto da aplicação de descontos na performance de vendas**, permitindo avaliar se a estratégia de descontos contribui para aumento de receita, volume de pedidos ou ticket médio.
+Esta página analisa o **impacto da aplicação de descontos na performance de vendas**, permitindo avaliar se essa estratégia contribui para aumento de receita, volume de pedidos ou ticket médio.
 
-O dashboard foi desenvolvido para apoiar decisões relacionadas a precificação e estratégias promocionais.
+O dashboard apoia decisões relacionadas a **precificação e campanhas promocionais**.
 
 #### 🔢 Principais métricas exibidas
 - Receita total
@@ -156,7 +157,7 @@ O dashboard foi desenvolvido para apoiar decisões relacionadas a precificação
 
 #### 📊 Análises disponíveis
 - Comparação de receita entre vendas com e sem desconto
-- Avaliação do ticket médio por aplicação de desconto
+- Ticket médio por aplicação de desconto
 - Volume de pedidos com e sem desconto
 
 #### 🎛️ Filtros interativos
@@ -164,18 +165,60 @@ O dashboard foi desenvolvido para apoiar decisões relacionadas a precificação
 - Cliente é assinante
 - Categoria de produto
 
-Esses filtros permitem segmentar a análise e compreender o impacto dos descontos em diferentes perfis de clientes e categorias.
+#### 🧠 Principais insights
+- As vendas **sem desconto** apresentam ticket médio ligeiramente superior às vendas com desconto.
+- Descontos representam uma parcela relevante da receita total, indicando forte uso da estratégia.
+- A aplicação de descontos **não aumenta o ticket médio**, mas contribui para maior volume de pedidos.
 
 #### 🎯 Objetivo da Análise de Descontos
-O objetivo desta página é identificar se os descontos:
-- Aumentam o volume de pedidos
-- Impactam o ticket médio
-- Contribuem de forma relevante para a receita total
+Apoiar decisões sobre:
+- Uso estratégico de descontos
+- Foco em volume versus valor por pedido
+- Segmentação de campanhas promocionais
 
-Os resultados indicam que, embora os descontos representem uma parcela relevante das vendas, eles **não aumentam o ticket médio**, sugerindo que devem ser utilizados de forma estratégica, com foco em volume e não em valor.
+Os resultados indicam que os descontos devem ser utilizados de forma **tática**, priorizando aumento de volume e giro de estoque.
 
 #### 🖼️ Visualização do Dashboard – Descontos & Estratégia Comercial
 ![Dashboard – Descontos & Estratégia Comercial](powerbi/screenshots/discounts_strategy.png)
+
+---
+
+### 👥 Perfil do Cliente
+
+Esta página tem como objetivo analisar **quem são os clientes do e-commerce** e como diferentes perfis se comportam em relação a volume de pedidos, ticket médio e status de assinatura.
+
+O foco está em compreender padrões demográficos e oportunidades de fidelização.
+
+#### 🔢 Principais métricas exibidas
+- Total de clientes
+- Ticket médio
+- Total de clientes assinantes
+- Percentual de clientes assinantes
+
+#### 📊 Análises disponíveis
+- Distribuição de clientes por gênero
+- Distribuição de clientes por faixa etária
+- Volume de pedidos por status de assinatura
+- Ticket médio por status de assinatura
+
+#### 🎛️ Filtros interativos
+- Gênero
+- Categoria de produto
+- Estado
+
+#### 🧠 Principais insights
+- A base de clientes é majoritariamente **masculina**, concentrada em faixas etárias mais maduras.
+- Apenas uma parcela dos clientes possui assinatura, indicando **potencial de crescimento do programa**.
+- O ticket médio é semelhante entre assinantes e não assinantes, sugerindo que a assinatura impacta mais a **recorrência** do que o valor por compra.
+
+#### 🎯 Objetivo da Análise de Perfil
+Apoiar decisões relacionadas a:
+- Estratégias de fidelização
+- Conversão de clientes em assinantes
+- Segmentação de campanhas por perfil demográfico
+
+#### 🖼️ Visualização do Dashboard – Perfil do Cliente
+![Dashboard – Perfil do Cliente](powerbi/screenshots/customer_profile.png)
 
 ---
 
