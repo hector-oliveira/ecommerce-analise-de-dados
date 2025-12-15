@@ -86,11 +86,11 @@ Com base nos insights obtidos, este projeto permite apoiar decisões como:
 
 | Tecnologia | Finalidade |
 |------------|------------|
-| **Python** | Manipulação e análise de dados |
-| **Pandas** | Limpeza e transformação |
+| **Python** | Transformação e padronização |
+| **Pandas** | Manipulação e análise de dados |
 | **Matplotlib** | Visualização |
 | **Jupyter Notebook** | Desenvolvimento exploratório |
-| **SQL Lógico** | Tabelas e métricas |
+| **SQL** | Consultas analíticas para métricas de negócio |
 | **CSV** | Fonte de dados |
 
 ---
@@ -219,6 +219,14 @@ Apoiar decisões relacionadas a:
 
 #### 🖼️ Visualização do Dashboard – Perfil do Cliente
 ![Dashboard – Perfil do Cliente](powerbi/screenshots/customer_profile.png)
+
+---
+
+### 📥 Download do arquivo Power BI:
+
+[e-commerce_dashboard.pbix](./powerbi/ecommerce_dashboard.pbix)
+
+⚠️ Para visualizar, é necessário ter o Power BI Desktop instalado.
 
 ---
 
