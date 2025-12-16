@@ -57,9 +57,9 @@ Foram criadas consultas SQL para responder perguntas de negócio, incluindo:
 - O público masculino representa **mais que o dobro** do volume de compras em relação ao feminino.
 
 ### 🧾 Produtos e Categorias
-- **Clothing** lidera em volume de vendas.
-- **Footwear** apresenta o maior **ticket médio**.
-- Produtos mais vendidos são fortes candidatos a estratégias de **cross-sell** e kits promocionais.
+- **Roupas** (Clothing) lidera em volume de vendas.
+- **Tênis/Sapato** (Footwear) apresenta o maior **ticket médio**.
+- Produtos mais vendidos são fortes candidatos à **criação de kits promocionais**..
 
 ### 🏷️ Descontos e Ticket Médio
 - Compras **sem desconto** possuem ticket médio levemente maior do que compras com desconto.
@@ -127,7 +127,7 @@ O dashboard foi construído para simular um cenário real de tomada de decisão,
 - Status de assinatura
 
 #### 🧠 Principais insights
-- A categoria **Clothing** concentra o maior volume de receita, indicando ser o principal motor de vendas.
+- A categoria **Roupas** (Clothing) concentra o maior volume de receita, indicando ser o principal motor de vendas.
 - A receita está distribuída entre diversos estados, reduzindo a dependência de uma única região.
 - O ticket médio permanece estável entre diferentes segmentos, sugerindo consistência no padrão de consumo.
 
