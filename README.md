@@ -224,7 +224,7 @@ Apoiar decisões relacionadas a:
 
 ### 📥 Download do arquivo Power BI:
 
-[e-commerce_dashboard.pbix](./powerbi/ecommerce_dashboard.pbix)
+[e-commerce_dashboard](powerbi/E-commerce.pbix)
 
 ⚠️ Para visualizar, é necessário ter o Power BI Desktop instalado.
 
