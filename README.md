@@ -222,11 +222,16 @@ Apoiar decisões relacionadas a:
 
 ---
 
-### 📥 Download do arquivo Power BI:
+### 📥 Arquivos do Projeto (Power BI)
 
-[e-commerce_dashboard](powerbi/E-commerce.pbix)
+[Arquivos do Projeto – Power BI & Datasets](https://drive.google.com/drive/folders/1EPOvfI8xYR4p4trJEWr8T3cQB0zyW3xN?usp=sharing)
 
-⚠️ Para visualizar, é necessário ter o Power BI Desktop instalado.
+📁 Conteúdo:
+- `e-commerce.pbix` → Dashboard em Power BI
+- `customer_clear.csv` → Dataset tratado utilizado no dashboard
+- `customer.csv` → Dataset original (antes da limpeza)
+
+⚠️ Para visualizar o dashboard, é necessário ter o Power BI Desktop instalado.
 
 ---
 
