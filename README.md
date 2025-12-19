@@ -22,6 +22,23 @@ O desafio deste projeto é **transformar dados brutos de clientes e compras em i
 
 ---
 
+## 📁 Estrutura do Repositório
+
+O projeto está organizado da seguinte forma:
+
+- `analytics/` → Notebooks com análises exploratórias e métricas específicas
+- `data/` → Datasets utilizados no projeto:
+  - `customer.csv` original antes da limpeza
+  - `customer_clear` após limpeza
+- `src/` → Scripts em Python para limpeza e preparação dos dados
+- `sql/` → Consultas SQL utilizadas para responder perguntas de negócio
+- `powerbi/` → Arquivos do Power BI utilizados na construção dos dashboards
+- `screenshots/` → Imagens dos dashboards utilizadas na documentação
+
+📌 O dashboard em Power BI foi construído a partir do dataset tratado disponível na pasta `data/`.
+
+---
+
 ## 🛠️ O que foi feito
 
 ### 🎨 Limpeza e Preparação dos Dados
@@ -139,7 +156,7 @@ Fornecer uma **visão rápida, clara e estratégica** do negócio, apoiando deci
 - Monitoramento de KPIs principais
 
 #### 🖼️ Visualização do Dashboard – Visão Executiva
-![Dashboard – Visão Executiva](powerbi/screenshots/executive_vision.png)
+![Dashboard – Visão Executiva](screenshots/customer_profile.png)
 
 ---
 
@@ -179,7 +196,7 @@ Apoiar decisões sobre:
 Os resultados indicam que os descontos devem ser utilizados de forma **tática**, priorizando aumento de volume e giro de estoque.
 
 #### 🖼️ Visualização do Dashboard – Descontos & Estratégia Comercial
-![Dashboard – Descontos & Estratégia Comercial](powerbi/screenshots/discounts_strategy.png)
+![Dashboard – Descontos & Estratégia Comercial](screenshots/discounts_strategy.png)
 
 ---
 
@@ -218,11 +235,11 @@ Apoiar decisões relacionadas a:
 - Segmentação de campanhas por perfil demográfico
 
 #### 🖼️ Visualização do Dashboard – Perfil do Cliente
-![Dashboard – Perfil do Cliente](powerbi/screenshots/customer_profile.png)
+![Dashboard – Perfil do Cliente](screenshots/customer_profile.png)
 
 ---
 
-### 📥 Arquivos do Projeto (Power BI)
+### 📥 Baixar Arquivos do Projeto
 
 [Arquivos do Projeto – Power BI & Datasets](https://drive.google.com/drive/folders/1EPOvfI8xYR4p4trJEWr8T3cQB0zyW3xN?usp=sharing)
 
