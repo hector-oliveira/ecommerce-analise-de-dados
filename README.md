@@ -244,9 +244,9 @@ Apoiar decisões relacionadas a:
 [Arquivos do Projeto – Power BI & Datasets](https://drive.google.com/drive/folders/1EPOvfI8xYR4p4trJEWr8T3cQB0zyW3xN?usp=sharing)
 
 📁 Conteúdo:
-- `e-commerce.pbix` → Dashboard em Power BI
-- `customer_clear.csv` → Dataset tratado utilizado no dashboard
-- `customer.csv` → Dataset original (antes da limpeza)
+- `e-commerce.pbix` - Dashboard em Power BI
+- `customer_clear.csv` - Dataset tratado utilizado no dashboard
+- `customer.csv` - Dataset original (antes da limpeza)
 
 ⚠️ Para visualizar o dashboard, é necessário ter o Power BI Desktop instalado.
 
