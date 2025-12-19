@@ -1,2 +1,6 @@
+# Arquivos do Projeto (Power BI & Datasets)
 *.pbix
 *.csv
+
+# Configurações gerais
+.vscode/settings.json
