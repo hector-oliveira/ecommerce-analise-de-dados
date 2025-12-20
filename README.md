@@ -26,7 +26,7 @@ O desafio deste projeto é **transformar dados brutos de clientes e compras em i
 
 O projeto está organizado da seguinte forma:
 
-- `analytics/`- Notebooks com análises exploratórias e métricas específicas
+- `analytics/` - Notebooks com análises exploratórias e métricas específicas
 - `data/` - Datasets utilizados no projeto:
   - `customer.csv` original antes da limpeza
   - `customer_clear` após limpeza
