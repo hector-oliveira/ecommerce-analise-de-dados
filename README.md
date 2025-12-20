@@ -22,20 +22,24 @@ O desafio deste projeto é **transformar dados brutos de clientes e compras em i
 
 ---
 
-## 📁 Estrutura do Repositório
+## 📁 Estrutura do Projeto/Repositório
 
 O projeto está organizado da seguinte forma:
 
-- `analytics/` → Notebooks com análises exploratórias e métricas específicas
-- `data/` → Datasets utilizados no projeto:
+- `analytics/`- Notebooks com análises exploratórias e métricas específicas
+- `data/` - Datasets utilizados no projeto:
   - `customer.csv` original antes da limpeza
   - `customer_clear` após limpeza
-- `src/` → Scripts em Python para limpeza e preparação dos dados
-- `sql/` → Consultas SQL utilizadas para responder perguntas de negócio
-- `powerbi/` → Arquivos do Power BI utilizados na construção dos dashboards
-- `screenshots/` → Imagens dos dashboards utilizadas na documentação
+- `src/` - Scripts em Python para limpeza e preparação dos dados
+- `sql/` - Consultas SQL utilizadas para responder perguntas de negócio
+- `powerbi/` - Arquivos do Power BI utilizados na construção dos dashboards
+- `screenshots/` - Imagens dos dashboards utilizadas na documentação
 
-📌 O dashboard em Power BI foi construído a partir do dataset tratado disponível na pasta `data/`.
+📌 O dashboard em Power BI foi construído a partir dos datasets tratados, que não estão versionados no repositório remoto.
+
+📂 Todos os arquivos, dados não tratados, dados tratados e o arquivo do Power BI, estão disponíveis em um link do Google Drive.
+
+⚠️ Em uma seção específica deste documento, explico como realizar o download do arquivo do dashboard.
 
 ---
 
