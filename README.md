@@ -245,7 +245,7 @@ Apoiar decisões relacionadas a:
 
 ### 📥 Baixar Arquivos do Projeto
 
-[Arquivos do Projeto – Power BI & Datasets](https://drive.google.com/drive/folders/1EPOvfI8xYR4p4trJEWr8T3cQB0zyW3xN?usp=sharing)
+[Arquivos do Projeto – Power BI & Datasets](https://kutt.it/dashboard-ecommerce)
 
 📁 Conteúdo:
 - `e-commerce.pbix` - Dashboard em Power BI
