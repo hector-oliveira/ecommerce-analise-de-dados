@@ -33,7 +33,7 @@ O objetivo deste projeto é **transformar dados brutos em informações claras e
 ├── sql/              # Consultas SQL analíticas
 ├── powerbi/          # Arquivos do Power BI
 └── screenshots/      # Imagens dos dashboards
-
+```
 
 
 📌 O dashboard foi construído a partir de dados tratados, não versionados no repositório remoto.
