@@ -1,267 +1,177 @@
 # 📊🛒 Análise de Dados de E-commerce
 
 ## 👀 Visão Geral do Projeto
-Este projeto tem como objetivo realizar uma **análise exploratória de dados (EDA)** em um conjunto de dados de e-commerce, com foco em **entender o comportamento de compra dos clientes**, identificar padrões de vendas e gerar **insights acionáveis para o negócio**.
+Este projeto realiza uma **análise de dados aplicada a um cenário de e-commerce**, com foco em **entender o comportamento de compra dos clientes**, identificar padrões de vendas e gerar **insights acionáveis para apoiar a tomada de decisão**.
 
-O projeto simula um cenário real de atuação de um **Analista de Dados**, passando por limpeza de dados, análise em Python, consultas SQL e interpretação dos resultados sob a ótica de negócio.
+O trabalho simula a atuação de um **Analista de Dados**, abrangendo desde a **estruturação e tratamento das bases**, análises em **Python e SQL**, até a **construção de dashboards no Power BI alinhados ao negócio**.
 
-O dataset original está disponível no **Kaggle**:  
+O dataset utilizado está disponível no **Kaggle**:  
 [*Shopping Behavior and Preferences Study*](https://www.kaggle.com/datasets/ranaghulamnabi/shopping-behavior-and-preferences-study)
 
 ---
 
-## 🎯 Problema de Negócio
-Empresas de e-commerce precisam responder perguntas estratégicas como:
+## 🎯 Contexto e Problema de Negócio
+Empresas de e-commerce dependem de dados confiáveis para responder questões estratégicas como:
 
-- Quais categorias e produtos geram mais vendas e receita?
-- Quem são os clientes que mais compram?
-- Descontos realmente aumentam o ticket médio?
-- Onde estão concentrados os principais consumidores?
+- Quais categorias e produtos geram maior volume de vendas e receita?
+- Quais perfis de clientes possuem maior valor para o negócio?
+- Qual o impacto real do uso de descontos?
+- Como as vendas se distribuem geograficamente?
 
-O desafio deste projeto é **transformar dados brutos de clientes e compras em informações úteis para tomada de decisão** nas áreas de marketing, vendas e estoque.
-
----
-
-## 📁 Estrutura do Projeto/Repositório
-
-O projeto está organizado da seguinte forma:
-
-- `analytics/` - Notebooks com análises exploratórias e métricas específicas
-- `data/` - Datasets utilizados no projeto:
-  - `customer.csv` original antes da limpeza
-  - `customer_clear` após limpeza
-- `src/` - Scripts em Python para limpeza e preparação dos dados
-- `sql/` - Consultas SQL utilizadas para responder perguntas de negócio
-- `powerbi/` - Arquivos do Power BI utilizados na construção dos dashboards
-- `screenshots/` - Imagens dos dashboards utilizadas na documentação
-
-📌 O dashboard em Power BI foi construído a partir dos datasets tratados, que não estão versionados no repositório remoto.
-
-📂 Todos os arquivos, dados não tratados, dados tratados e o arquivo do Power BI, estão disponíveis em um link do Google Drive.
-
-⚠️ Em uma seção específica deste documento, explico como realizar o download do arquivo do dashboard.
+O objetivo deste projeto é **transformar dados brutos em informações claras e confiáveis**, apoiando decisões nas áreas de **marketing, vendas e gestão de estoque**.
 
 ---
 
-## 🛠️ O que foi feito
+## 📁 Estrutura do Projeto
 
-### 🎨 Limpeza e Preparação dos Dados
-- Padronização de nomes de colunas
-- Normalização de variáveis categóricas (gênero, categoria, localização, etc.)
+```text
+├── analytics/        # Notebooks com análises e métricas de negócio
+├── data/             # Datasets utilizados
+│   ├── customer.csv        # Base original
+│   └── customer_clear.csv  # Base tratada
+├── src/              # Scripts em Python para preparação dos dados
+├── sql/              # Consultas SQL analíticas
+├── powerbi/          # Arquivos do Power BI
+└── screenshots/      # Imagens dos dashboards
+
+
+
+📌 O dashboard foi construído a partir de dados tratados, não versionados no repositório remoto.
+
+---
+
+## 🛠️ Etapas do Trabalho
+
+### 🎨 Tratamento e Qualidade dos Dados
+- Padronização de colunas
+- Normalização de variáveis categóricas
 - Remoção de duplicados
-- Renomeação de colunas para melhor legibilidade
-- Geração de um dataset limpo (`customer_clear.csv`)
+- Verificação de valores nulos
+- Garantia de consistência para análises confiáveis
 
-### 🔎 Análise Exploratória em Python
-Utilizando **Pandas** e **Matplotlib**, foram realizadas análises como:
-- Categorias e itens mais vendidos
-- Distribuição de compras por faixa etária
-- Comparação de compras por gênero
-- Localizações com maior volume de compras
-- Visualizações para facilitar interpretação dos dados
+### 🔎 Análises em Python
+- Categorias e produtos mais vendidos
+- Perfil de compra por gênero e faixa etária
+- Distribuição geográfica das vendas
 
-### 💾 Análise com SQL
-Foram criadas consultas SQL para responder perguntas de negócio, incluindo:
+### 💾 Análises com SQL
 - Ticket médio por categoria
-- Volume de vendas por categoria
-- Avaliação média dos clientes por categoria
-- Impacto de descontos no ticket médio
-- Frequência de compras versus valor médio gasto
-- Identificação de clientes com maior histórico de compras
+- Volume de vendas
+- Impacto de descontos
+- Frequência de compra dos clientes
 
 ---
 
-## 🔍 Principais Descobertas
-
-### 👥 Perfil do Cliente
-- A maior concentração de compras está entre clientes de **36 a 65 anos**, com pico entre **51 e 65 anos**.
-- O público masculino representa **mais que o dobro** do volume de compras em relação ao feminino.
-
-### 🧾 Produtos e Categorias
-- **Roupas** (Clothing) lidera em volume de vendas.
-- **Tênis/Sapato** (Footwear) apresenta o maior **ticket médio**.
-- Produtos mais vendidos são fortes candidatos à **criação de kits promocionais**..
-
-### 🏷️ Descontos e Ticket Médio
-- Compras **sem desconto** possuem ticket médio levemente maior do que compras com desconto.
-- Descontos não aumentam o valor médio da compra, mas podem ser usados para aumento de volume.
-
-### 📍 Localização
-- As vendas estão distribuídas entre diversos estados, com leve liderança de algumas regiões.
-- Não há forte dependência de uma única localização, reduzindo risco regional.
-
----
-
-## 💡 Impacto no Negócio
-Com base nos insights obtidos, este projeto permite apoiar decisões como:
-
-- **Marketing direcionado** ao público masculino entre 36 e 65 anos, destacando qualidade e custo-benefício.
-- **Uso estratégico de descontos**, focando em volume de vendas e não em aumento de ticket médio.
-- **Gestão de estoque**, priorizando categorias de alto volume e alto valor.
-- **Campanhas regionais**, otimizando investimentos em estados com maior retorno.
-- **Precificação inteligente**, explorando maior margem em produtos com alta demanda.
-
----
-
-## 🧰 Tecnologias Utilizadas
-
-| Tecnologia | Finalidade |
-|------------|------------|
-| **Python** | Transformação e padronização |
-| **Pandas** | Manipulação e análise de dados |
-| **Matplotlib** | Visualização |
-| **Jupyter Notebook** | Desenvolvimento exploratório |
-| **SQL** | Consultas analíticas para métricas de negócio |
-| **CSV** | Fonte de dados |
-
----
-
-## 🚀 Possíveis Extensões Futuras
-
-- Análise de métricas avançadas como LTV e churn
-- Modelos de previsão de vendas
-- Deploy da aplicação 
+## 🔍 Principais Insights
+- Clientes entre **36 e 65 anos** concentram a maior parte das compras
+- Público masculino apresenta maior volume de pedidos
+- Descontos aumentam volume, mas não o ticket médio
+- Receita bem distribuída regionalmente
 
 ---
 
 ## 📊 Dashboards
 
 ### 📌 Visão Executiva
+Esta página fornece uma **visão geral do desempenho do e-commerce**, permitindo que gestores acompanhem rapidamente os principais indicadores do negócio.
 
-Esta página apresenta uma **visão executiva da performance do e-commerce**, com foco em indicadores estratégicos de vendas e distribuição geográfica, desenvolvida no **Power BI**.
+#### 🔢 KPIs apresentados
+- Receita total  
+- Ticket médio  
+- Total de pedidos  
+- Total de clientes  
 
-O dashboard foi construído para simular um cenário real de tomada de decisão, permitindo que gestores analisem rapidamente o desempenho geral do negócio.
-
-#### 🔢 Principais métricas exibidas
-- Receita total
-- Ticket médio
-- Total de pedidos
-- Total de clientes
+> ⚠️ **Observação sobre os dados**  
+> Neste dataset, **não há uma chave distinta para pedidos e clientes**. Cada registro representa uma única compra por cliente, o que faz com que o **Total de Pedidos e o Total de Clientes possuam o mesmo valor**.  
+>  
+> Esses indicadores foram mantidos no dashboard para **clareza conceitual**, simulando um cenário real onde essas métricas seriam distintas em uma base transacional completa.
 
 #### 📈 Análises disponíveis
-- Receita por categoria de produto
-- Distribuição de receita por estado (EUA)
+- Receita por categoria  
+- Distribuição de receita por estado  
 
-#### 🎛️ Filtros interativos
-- Gênero do cliente
-- Aplicação de desconto
-- Status de assinatura
+#### 🎯 Objetivo do Dashboard
+Apoiar decisões estratégicas relacionadas a:
+- Prioridade de categorias  
+- Monitoramento de performance  
+- Alocação de investimentos  
 
-#### 🧠 Principais insights
-- A categoria **Roupas** (Clothing) concentra o maior volume de receita, indicando ser o principal motor de vendas.
-- A receita está distribuída entre diversos estados, reduzindo a dependência de uma única região.
-- O ticket médio permanece estável entre diferentes segmentos, sugerindo consistência no padrão de consumo.
+#### 🧠 Insight-chave
+A categoria **Roupas (Clothing)** é o principal motor de receita, enquanto a distribuição regional equilibrada reduz riscos operacionais.
 
-#### 🎯 Objetivo da Visão Executiva
-Fornecer uma **visão rápida, clara e estratégica** do negócio, apoiando decisões relacionadas a:
-- Prioridade de categorias
-- Alocação de investimentos
-- Análise regional de vendas
-- Monitoramento de KPIs principais
-
-#### 🖼️ Visualização do Dashboard – Visão Executiva
-![Dashboard – Visão Executiva](screenshots/customer_profile.png)
+#### 🖼️ Visualização
+![Dashboard – Visão Executiva](screenshots/executive_vision.png)
 
 ---
 
 ### 🏷️ Descontos & Estratégia Comercial
+Este dashboard analisa o **impacto da aplicação de descontos** no desempenho de vendas, permitindo avaliar se a estratégia gera valor real para o negócio.
 
-Esta página analisa o **impacto da aplicação de descontos na performance de vendas**, permitindo avaliar se essa estratégia contribui para aumento de receita, volume de pedidos ou ticket médio.
-
-O dashboard apoia decisões relacionadas a **precificação e campanhas promocionais**.
-
-#### 🔢 Principais métricas exibidas
+#### 🔢 KPIs apresentados
 - Receita total
 - Receita com desconto
 - Receita sem desconto
 - Percentual de vendas com desconto
 
 #### 📊 Análises disponíveis
-- Comparação de receita entre vendas com e sem desconto
-- Ticket médio por aplicação de desconto
+- Comparação de ticket médio
 - Volume de pedidos com e sem desconto
+- Receita por categoria com desconto
 
-#### 🎛️ Filtros interativos
-- Gênero do cliente
-- Cliente é assinante
-- Categoria de produto
-
-#### 🧠 Principais insights
-- As vendas **sem desconto** apresentam ticket médio ligeiramente superior às vendas com desconto.
-- Descontos representam uma parcela relevante da receita total, indicando forte uso da estratégia.
-- A aplicação de descontos **não aumenta o ticket médio**, mas contribui para maior volume de pedidos.
-
-#### 🎯 Objetivo da Análise de Descontos
+#### 🎯 Objetivo do Dashboard
 Apoiar decisões sobre:
-- Uso estratégico de descontos
-- Foco em volume versus valor por pedido
-- Segmentação de campanhas promocionais
+- Uso tático de descontos
+- Foco em volume versus valor
+- Planejamento de campanhas promocionais
 
-Os resultados indicam que os descontos devem ser utilizados de forma **tática**, priorizando aumento de volume e giro de estoque.
+#### 🧠 Insight-chave
+Descontos aumentam o volume de pedidos, mas **não elevam o ticket médio**, indicando que devem ser usados de forma estratégica.
 
-#### 🖼️ Visualização do Dashboard – Descontos & Estratégia Comercial
+#### 🖼️ Visualização
 ![Dashboard – Descontos & Estratégia Comercial](screenshots/discounts_strategy.png)
 
 ---
 
 ### 👥 Perfil do Cliente
+Este dashboard aprofunda a análise sobre **quem são os clientes** e como diferentes perfis se comportam em relação a compras e recorrência.
 
-Esta página tem como objetivo analisar **quem são os clientes do e-commerce** e como diferentes perfis se comportam em relação a volume de pedidos, ticket médio e status de assinatura.
-
-O foco está em compreender padrões demográficos e oportunidades de fidelização.
-
-#### 🔢 Principais métricas exibidas
+#### 🔢 KPIs apresentados
 - Total de clientes
 - Ticket médio
-- Total de clientes assinantes
-- Percentual de clientes assinantes
+- Clientes assinantes
+- Percentual de assinantes
 
 #### 📊 Análises disponíveis
-- Distribuição de clientes por gênero
-- Distribuição de clientes por faixa etária
-- Volume de pedidos por status de assinatura
-- Ticket médio por status de assinatura
+- Distribuição por gênero
+- Faixa etária
+- Compras por status de assinatura
+- Ticket médio por perfil
 
-#### 🎛️ Filtros interativos
-- Gênero
-- Categoria de produto
-- Estado
+#### 🎯 Objetivo do Dashboard
+Apoiar estratégias de:
+- Fidelização
+- Segmentação de clientes
+- Crescimento do programa de assinatura
 
-#### 🧠 Principais insights
-- A base de clientes é majoritariamente **masculina**, concentrada em faixas etárias mais maduras.
-- Apenas uma parcela dos clientes possui assinatura, indicando **potencial de crescimento do programa**.
-- O ticket médio é semelhante entre assinantes e não assinantes, sugerindo que a assinatura impacta mais a **recorrência** do que o valor por compra.
+#### 🧠 Insight-chave
+A assinatura impacta mais a **recorrência** do que o valor gasto por compra.
 
-#### 🎯 Objetivo da Análise de Perfil
-Apoiar decisões relacionadas a:
-- Estratégias de fidelização
-- Conversão de clientes em assinantes
-- Segmentação de campanhas por perfil demográfico
-
-#### 🖼️ Visualização do Dashboard – Perfil do Cliente
+#### 🖼️ Visualização
 ![Dashboard – Perfil do Cliente](screenshots/customer_profile.png)
 
 ---
 
-### 📥 Baixar Arquivos do Projeto
-
+## 📥 Baixar Arquivos do Projeto
 [Arquivos do Projeto – Power BI & Datasets](https://kutt.it/dashboard-ecommerce)
-
-📁 Conteúdo:
-- `e-commerce.pbix` - Dashboard em Power BI
-- `customer_clear.csv` - Dataset tratado utilizado no dashboard
-- `customer.csv` - Dataset original (antes da limpeza)
-
-⚠️ Para visualizar o dashboard, é necessário ter o Power BI Desktop instalado.
 
 ---
 
 ## ✅ Conclusão
-Este projeto demonstra a capacidade de **analisar dados, gerar insights relevantes e traduzi-los em impacto real para o negócio**, simulando atividades do dia a dia de um Analista de Dados em um ambiente de e-commerce.
+Este projeto demonstra a capacidade de **estruturar dados, gerar análises orientadas ao negócio e comunicar resultados de forma clara**, apoiando decisões estratégicas em um cenário real de e-commerce.
 
 ---
 
 ## 👨‍💻 Autor
-
-[**Hector Oliveira**](https://www.linkedin.com/in/hectoroliveira-tech/)  
+Hector Oliveira  
 Analista de Dados Júnior  
+🔗[**LinkedIn**](https://www.linkedin.com/in/hectoroliveira-tech/)  
