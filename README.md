@@ -87,8 +87,8 @@ Esta página fornece uma **visão geral do desempenho do e-commerce**, permitind
 > Esses indicadores foram mantidos no dashboard para **clareza conceitual**, simulando um cenário real onde essas métricas seriam distintas em uma base transacional completa.
 
 #### 📈 Análises disponíveis
-- Receita por categoria  
-- Distribuição de receita por estado  
+- Classificação de Faturamento por Categoria  
+- Performance de Vendas por Localização  
 
 #### 🎯 Objetivo do Dashboard
 Apoiar decisões estratégicas relacionadas a:
@@ -114,9 +114,9 @@ Este dashboard analisa o **impacto da aplicação de descontos** no desempenho d
 - Percentual de vendas com desconto
 
 #### 📊 Análises disponíveis
-- Comparação de ticket médio
-- Volume de pedidos com e sem desconto
-- Receita por categoria com desconto
+- Receita: Com vs. Sem Desconto
+- Comparação de Ticket Médio: Com vs. Sem Desconto
+- Volume de Pedidos: Com vs. Sem Desconto
 
 #### 🎯 Objetivo do Dashboard
 Apoiar decisões sobre:
@@ -142,10 +142,10 @@ Este dashboard aprofunda a análise sobre **quem são os clientes** e como difer
 - Percentual de assinantes
 
 #### 📊 Análises disponíveis
-- Distribuição por gênero
-- Faixa etária
-- Compras por status de assinatura
-- Ticket médio por perfil
+- Composição da Base por Gênero
+- Programa de Fidelidade (Assinantes)
+- Perfil Demográfico por Idade
+- Ticket Médio (Assinantes vs Não-Assinantes)
 
 #### 🎯 Objetivo do Dashboard
 Apoiar estratégias de:
