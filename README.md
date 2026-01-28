@@ -1,79 +1,131 @@
 # 📊🛒 Análise de Dados de E-commerce
 
 ## 👀 Visão Geral do Projeto
-Este projeto realiza uma **análise de dados aplicada a um cenário de e-commerce**, com foco em **entender o comportamento de compra dos clientes**, identificar padrões de vendas e gerar **insights acionáveis para apoiar a tomada de decisão**.
+Este projeto apresenta uma **análise de dados aplicada a um cenário de e-commerce**, com foco em **gerar recomendações práticas para a gestão**. A iniciativa simula a atuação de um **Analista de Dados**, abrangendo desde a **organização e tratamento das bases**, análises em **Python e SQL**, até a **construção de dashboards executivos no Power BI**.
 
-O trabalho simula a atuação de um **Analista de Dados**, abrangendo desde a **estruturação e tratamento das bases**, análises em **Python e SQL**, até a **construção de dashboards no Power BI alinhados ao negócio**.
+O principal objetivo é **traduzir dados operacionais em decisões estratégicas**, utilizando indicadores claros, linguagem acessível à liderança e foco em impacto de negócio.
 
-O dataset utilizado está disponível no **Kaggle**:  
+Dataset utilizado (Kaggle):  
 [*Shopping Behavior and Preferences Study*](https://www.kaggle.com/datasets/ranaghulamnabi/shopping-behavior-and-preferences-study)
 
 ---
 
 ## 🎯 Contexto e Problema de Negócio
-Empresas de e-commerce dependem de dados confiáveis para responder questões estratégicas como:
+Em ambientes de e-commerce, decisões equivocadas sobre **descontos, fidelização e priorização de categorias** podem gerar crescimento artificial de volume, erosão de margem e baixa sustentabilidade no longo prazo.
 
-- Quais categorias e produtos geram maior volume de vendas e receita?
-- Quais perfis de clientes possuem maior valor para o negócio?
-- Qual o impacto real do uso de descontos?
-- Como as vendas se distribuem geograficamente?
+As principais perguntas de negócio abordadas neste projeto são:
 
-O objetivo deste projeto é **transformar dados brutos em informações claras e confiáveis**, apoiando decisões nas áreas de **marketing, vendas e gestão de estoque**.
+- O crescimento observado é saudável ou depende excessivamente de estímulos promocionais?
+- Quais categorias realmente sustentam a receita?
+- Descontos estão aumentando valor ou apenas volume?
+- Quais perfis de clientes oferecem maior potencial estratégico?
+
+O projeto busca **reduzir incertezas** e apoiar decisões nas áreas de **comercial, marketing e estratégia**.
 
 ---
 
 ## 📁 Estrutura do Projeto
+O projeto foi organizado seguindo boas práticas de análise e versionamento:
 
-```text
-├── analytics/        # Notebooks com análises e métricas de negócio
-├── data/             # Datasets utilizados
-│   ├── customer.csv        # Base original
-│   └── customer_clear.csv  # Base tratada
-├── src/              # Scripts em Python para preparação dos dados
-├── sql/              # Consultas SQL analíticas
-├── powerbi/          # Arquivos do Power BI
-└── screenshots/      # Imagens dos dashboards
-```
+- analytics: notebooks com análises exploratórias e métricas  
+- data: bases originais e tratadas  
+- src: scripts de limpeza e padronização  
+- sql: consultas analíticas  
+- powerbi: dashboards  
+- screenshots: imagens utilizadas na documentação  
 
-
-📌 O dashboard foi construído a partir de dados tratados, não versionados no repositório remoto.
+📌 Os dashboards utilizam dados tratados localmente.
 
 ---
 
 ## 🛠️ Etapas do Trabalho
 
 ### 🎨 Tratamento e Qualidade dos Dados
-- Padronização de colunas
-- Normalização de variáveis categóricas
-- Remoção de duplicados
-- Verificação de valores nulos
-- Garantia de consistência para análises confiáveis
+- Padronização de colunas  
+- Normalização de variáveis categóricas  
+- Remoção de duplicados  
+- Tratamento de valores nulos  
+- Validação de consistência lógica  
 
-### 🔎 Análises em Python
-- Categorias e produtos mais vendidos
-- Perfil de compra por gênero e faixa etária
-- Distribuição geográfica das vendas
-
-### 💾 Análises com SQL
-- Ticket médio por categoria
-- Volume de vendas
-- Impacto de descontos
-- Frequência de compra dos clientes
+Essas etapas garantem que **os indicadores apresentados não estejam distorcidos**, aumentando a confiança das análises para uso executivo.
 
 ---
 
-## 🔍 Principais Insights
-- Clientes entre **36 e 65 anos** concentram a maior parte das compras
-- Público masculino apresenta maior volume de pedidos
-- Descontos aumentam volume, mas não o ticket médio
-- Receita bem distribuída regionalmente
+### 🔎 Análises em Python
+- Volume de vendas e receita por categoria  
+- Perfil demográfico dos clientes  
+- Distribuição geográfica das vendas  
+
+---
+
+### 💾 Análises com SQL
+- Ticket médio por categoria  
+- Comparação de vendas com e sem desconto  
+- Frequência de compra  
+- Perfil de clientes assinantes  
+
+---
+
+## 🔍 Principais Conclusões
+
+### 1️⃣ O crescimento atual é impulsionado por volume, não por valor
+**Como chegamos a isso:**  
+Ao comparar ticket médio entre categorias, perfis e vendas com/sem desconto, observou-se **baixa variação no valor médio por compra**, mesmo em cenários de maior volume.
+
+**O que isso indica:**  
+O aumento de receita ocorre principalmente pelo **maior número de pedidos**, e não por clientes gastando mais.
+
+**O que a gestão deve fazer:**  
+- Monitorar crescimento com atenção à margem  
+- Evitar interpretar aumento de pedidos como melhoria automática de rentabilidade  
+
+**Impacto esperado:**  
+Maior controle financeiro e prevenção de crescimento artificial.
+
+---
+
+### 2️⃣ Descontos aumentam pedidos, mas não aumentam ticket médio
+**Como chegamos a isso:**  
+A comparação direta entre vendas com e sem desconto mostrou:
+- Aumento claro no volume de pedidos
+- Ticket médio praticamente estável
+
+**O que isso indica:**  
+Descontos atuam como **aceleradores de demanda**, não como geradores de valor.
+
+**O que a gestão deve fazer:**  
+- Usar descontos de forma segmentada  
+- Evitar campanhas amplas e recorrentes  
+- Associar descontos a objetivos claros (estoque, aquisição, sazonalidade)
+
+**Impacto esperado:**  
+Redução de risco de erosão de margem e campanhas mais eficientes.
+
+---
+
+### 3️⃣ Fidelização é mais sustentável do que campanhas agressivas
+**Como chegamos a isso:**  
+Clientes assinantes apresentam:
+- Maior recorrência
+- Ticket médio semelhante aos não assinantes
+
+**O que isso indica:**  
+O valor do programa de fidelidade está na **frequência**, não no valor unitário da compra.
+
+**O que a gestão deve fazer:**  
+- Investir em retenção e relacionamento  
+- Usar benefícios não financeiros (experiência, conveniência)  
+- Reduzir dependência de descontos para gerar volume
+
+**Impacto esperado:**  
+Receita mais previsível e crescimento sustentável.
 
 ---
 
 ## 📊 Dashboards
 
 ### 📌 Visão Executiva
-Esta página fornece uma **visão geral do desempenho do e-commerce**, permitindo que gestores acompanhem rapidamente os principais indicadores do negócio.
+Dashboard focado no **acompanhamento rápido da performance geral**.
 
 #### 🔢 KPIs apresentados
 - Receita total  
@@ -81,23 +133,21 @@ Esta página fornece uma **visão geral do desempenho do e-commerce**, permitind
 - Total de pedidos  
 - Total de clientes  
 
-> ⚠️ **Observação sobre os dados**  
-> Neste dataset, **não há uma chave distinta para pedidos e clientes**. Cada registro representa uma única compra por cliente, o que faz com que o **Total de Pedidos e o Total de Clientes possuam o mesmo valor**.  
->  
-> Esses indicadores foram mantidos no dashboard para **clareza conceitual**, simulando um cenário real onde essas métricas seriam distintas em uma base transacional completa.
+⚠️ Observação sobre os dados  
+Neste dataset, cada registro representa uma compra individual, o que faz com que pedidos e clientes tenham o mesmo valor.  
+Os KPIs foram mantidos para **clareza conceitual e simulação de um cenário real**.
 
 #### 📈 Análises disponíveis
-- Classificação de Faturamento por Categoria  
-- Performance de Vendas por Localização  
+- Receita por categoria  
+- Receita por localização  
 
 #### 🎯 Objetivo do Dashboard
-Apoiar decisões estratégicas relacionadas a:
-- Prioridade de categorias  
-- Monitoramento de performance  
-- Alocação de investimentos  
+- Identificar categorias estratégicas  
+- Avaliar concentração de receita  
+- Apoiar decisões de investimento  
 
 #### 🧠 Insight-chave
-A categoria **Roupas (Clothing)** é o principal motor de receita, enquanto a distribuição regional equilibrada reduz riscos operacionais.
+A categoria **Clothing** sustenta a maior parte da receita, enquanto a boa distribuição geográfica reduz riscos operacionais.
 
 #### 🖼️ Visualização
 ![Dashboard – Visão Executiva](screenshots/executive_vision.png)
@@ -105,27 +155,25 @@ A categoria **Roupas (Clothing)** é o principal motor de receita, enquanto a di
 ---
 
 ### 🏷️ Descontos & Estratégia Comercial
-Este dashboard analisa o **impacto da aplicação de descontos** no desempenho de vendas, permitindo avaliar se a estratégia gera valor real para o negócio.
+Dashboard dedicado à análise de **retorno real de campanhas promocionais**.
 
 #### 🔢 KPIs apresentados
-- Receita total
-- Receita com desconto
-- Receita sem desconto
-- Percentual de vendas com desconto
+- Receita total  
+- Receita com desconto  
+- Receita sem desconto  
+- Percentual de vendas com desconto  
 
 #### 📊 Análises disponíveis
-- Receita: Com vs. Sem Desconto
-- Comparação de Ticket Médio: Com vs. Sem Desconto
-- Volume de Pedidos: Com vs. Sem Desconto
+- Receita com vs sem desconto  
+- Ticket médio com vs sem desconto  
+- Volume de pedidos  
 
 #### 🎯 Objetivo do Dashboard
-Apoiar decisões sobre:
-- Uso tático de descontos
-- Foco em volume versus valor
-- Planejamento de campanhas promocionais
+- Avaliar eficiência de descontos  
+- Apoiar decisões entre volume e margem  
 
 #### 🧠 Insight-chave
-Descontos aumentam o volume de pedidos, mas **não elevam o ticket médio**, indicando que devem ser usados de forma estratégica.
+Descontos são eficazes para volume, mas **não aumentam valor por compra**.
 
 #### 🖼️ Visualização
 ![Dashboard – Descontos & Estratégia Comercial](screenshots/discounts_strategy.png)
@@ -133,28 +181,25 @@ Descontos aumentam o volume de pedidos, mas **não elevam o ticket médio**, ind
 ---
 
 ### 👥 Perfil do Cliente
-Este dashboard aprofunda a análise sobre **quem são os clientes** e como diferentes perfis se comportam em relação a compras e recorrência.
+Dashboard focado no **comportamento e potencial estratégico dos clientes**.
 
 #### 🔢 KPIs apresentados
-- Total de clientes
-- Ticket médio
-- Clientes assinantes
-- Percentual de assinantes
+- Total de clientes  
+- Ticket médio  
+- Clientes assinantes  
+- Percentual de assinantes  
 
 #### 📊 Análises disponíveis
-- Composição da Base por Gênero
-- Programa de Fidelidade (Assinantes)
-- Perfil Demográfico por Idade
-- Ticket Médio (Assinantes vs Não-Assinantes)
+- Gênero  
+- Faixa etária  
+- Programa de fidelidade  
 
 #### 🎯 Objetivo do Dashboard
-Apoiar estratégias de:
-- Fidelização
-- Segmentação de clientes
-- Crescimento do programa de assinatura
+- Apoiar estratégias de retenção  
+- Identificar perfis prioritários  
 
 #### 🧠 Insight-chave
-A assinatura impacta mais a **recorrência** do que o valor gasto por compra.
+Assinaturas aumentam recorrência, mas **não elevam gasto médio**, reforçando seu papel estratégico de longo prazo.
 
 #### 🖼️ Visualização
 ![Dashboard – Perfil do Cliente](screenshots/customer_profile.png)
@@ -167,11 +212,11 @@ A assinatura impacta mais a **recorrência** do que o valor gasto por compra.
 ---
 
 ## ✅ Conclusão
-Este projeto demonstra a capacidade de **estruturar dados, gerar análises orientadas ao negócio e comunicar resultados de forma clara**, apoiando decisões estratégicas em um cenário real de e-commerce.
+Este projeto demonstra a capacidade de **analisar dados com foco em decisão**, conectando métricas a ações práticas e traduzindo análises técnicas em recomendações claras para a gestão de e-commerce.
 
 ---
 
 ## 👨‍💻 Autor
 Hector Oliveira  
 Analista de Dados Júnior  
-🔗[**LinkedIn**](https://www.linkedin.com/in/hectoroliveira-tech/)  
+🔗 https://www.linkedin.com/in/hectoroliveira-tech/
