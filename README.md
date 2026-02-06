@@ -27,12 +27,20 @@ O projeto busca **reduzir incertezas** e apoiar decisões nas áreas de **comerc
 ## 📁 Estrutura do Projeto
 O projeto foi organizado seguindo boas práticas de análise e versionamento:
 
-- analytics: notebooks com análises exploratórias e métricas  
-- data: bases originais e tratadas  
-- src: scripts de limpeza e padronização  
-- sql: consultas analíticas  
-- powerbi: dashboards  
-- screenshots: imagens utilizadas na documentação  
+```
+├── analytics/    
+│   └── Notebooks com análises exploratórias, métricas e insights
+├── data/         
+│   └── Bases originais e tratadas (download disponível)
+├── powerbi/      
+│   └── Dashboards interativos e relatórios
+├── screenshots/ 
+│   └── Imagens utilizadas na documentação
+├── sql/          
+│   └── Consultas analíticas e scripts de apoio
+├── src/          
+│   └── Scripts de limpeza, transformação e padronização
+```
 
 📌 Os dashboards utilizam dados tratados localmente.
 
