@@ -42,7 +42,7 @@ O projeto foi organizado seguindo boas práticas de análise e versionamento:
 │   └── Scripts de limpeza, transformação e padronização
 ```
 
-📌 Os dashboards utilizam dados tratados localmente.
+Os dashboards utilizam dados tratados localmente.
 
 ---
 
@@ -59,14 +59,14 @@ Essas etapas garantem que **os indicadores apresentados não estejam distorcidos
 
 ---
 
-### 🔎 Análises em Python
+### Análises em Python
 - Volume de vendas e receita por categoria  
 - Perfil demográfico dos clientes  
 - Distribuição geográfica das vendas  
 
 ---
 
-### 💾 Análises com SQL
+### Análises com SQL
 - Ticket médio por categoria  
 - Comparação de vendas com e sem desconto  
 - Frequência de compra  
