@@ -215,7 +215,7 @@ Assinaturas aumentam recorrência, mas **não elevam gasto médio**, reforçando
 ---
 
 ## Baixar Arquivos do Projeto
-[Arquivos do Projeto – Power BI & Datasets](https://kutt.it/dashboard-ecommerce)
+[Arquivos do Projeto – Power BI & Datasets](https://drive.google.com/drive/folders/1cgCnmoWKXqyXBvnoEUkGQ-H1u7UkKTJG?usp=sharing)
 
 ---
 
